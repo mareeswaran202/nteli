@@ -12,11 +12,12 @@
   padding: 0px 20px;
 }
 .navbar {
-  background-color: #fff;
-  box-shadow: 0px 4px 4px 0px #0000001a;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px #0000001a;
 }
+
 .navbar-dark .navbar-toggler {
   background-color: #3d3d3d;
 }
@@ -29,6 +30,9 @@
 }
 .navbar-nav .dropdown-menu {
   background: #fff;
+}
+.fixed-top {
+  background-color: #fff;
 }
 .dropdown-item {
   font-family: "Roboto", sans-serif;
@@ -147,12 +151,17 @@
   background-size: cover;
 }
 .hero_section .content_sec {
-  padding: 100px 50px 100px 80px;
+  padding: 100px 0px 100px 0px;
   display: flex;
 }
-.ribbon-box {
+.ribbon_outer {
   position: relative;
   top: 20px;
+}
+.ribbon-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .ribbon-box .ribbon.ribbon-shape {
   display: inline-block;
@@ -166,10 +175,10 @@
   -webkit-box-shadow: 2px 5px 10px rgba(33, 37, 41, 0.15);
   box-shadow: 2px 5px 10px rgba(33, 37, 41, 0.15);
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   position: absolute;
-  left: -1px;
+
   top: 5px;
   font-family: "Allerta", sans-serif;
 }
@@ -201,7 +210,7 @@
 
 .topheader_txt {
   font-family: "Inter", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 50px;
   letter-spacing: 0em;
@@ -219,7 +228,7 @@
 }
 .salesforce_txt p {
   font-family: "Roboto", sans-serif;
-  font-size: 27px;
+  font-size: 1.6rem;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0em;
@@ -229,23 +238,29 @@
 }
 .salesforce_txt h5 {
   font-family: "Inter", sans-serif;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 600;
   line-height: 68px;
   letter-spacing: 0em;
   text-align: left;
   color: #0e2e35;
+  width: 100%;
+  max-width: 475px;
 }
 .certified_sec {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .salesforce_txt {
-  padding-left: 85px !important;
+  /* padding-left: 85px !important; */
   width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 .salesforce_txt span {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0em;
@@ -325,13 +340,13 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 45px;
-  color: #182E55;
+  color: #182e55;
 }
 
 .secheader_innerpage {
   color: #182e55;
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
   margin-top: 70px;
@@ -350,31 +365,30 @@
 }
 
 /* Who we are starts */
-.whoweare {
-  background: #f6fbff;
-}
+
 .whowearebg {
   background-image: url("/img/who-we-arebg.png");
-  background-position: center center;
-  background-size: cover;
+  background-position: top left;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   padding: 60px 0px 60px 0px;
+  background-color: #f6fbff;
 }
 .whoweareinner {
   width: 100%;
-  max-width: 403px;
+  max-width: 500px;
 }
 .whoweareinner p {
   font-family: "Roboto", sans-serif;
   color: #606060;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
   text-align: justify;
 }
 .certificationsec img {
-  width: 590px;
+  width: 100%;
 }
 /* Who we are Ends */
 
@@ -472,7 +486,9 @@
   color: #fff;
   text-align: center;
 }
-.buttonwith_bluebg:hover{color: #fff;}
+.buttonwith_bluebg:hover {
+  color: #fff;
+}
 .buttonwith_whitebg {
   background: #fff;
   color: #3a86ff;
@@ -529,6 +545,7 @@
   display: flex;
   align-items: center;
   margin-top: 30px;
+  justify-content: center;
 }
 .first-card,
 .third-card {
@@ -686,7 +703,13 @@
 }
 .addresstxt {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #77808b;
+}
+.addresstxt a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   color: #77808b;
 }
@@ -699,7 +722,7 @@
 .footer_menu h2 {
   font-family: "Raleway", sans-serif;
   color: #3a86ff;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0em;
@@ -716,7 +739,7 @@
 }
 .footer_menu ul li a {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
@@ -767,9 +790,11 @@
   letter-spacing: 0em;
   text-align: left;
   color: #77808b;
-  position: absolute;
-  margin: 0px;
-  bottom: 12px;
+  /* position: absolute; */
+  /* margin: 0px; */
+  /* bottom: 12px; */
+  margin-top: 20px;
+
 }
 
 .accordion-button {
@@ -790,9 +815,16 @@
 /* .accordion-button:focus {
   border-color: #8b8787 !important;
 } */
-.accordion-item{border: none !important;}
-.accordion-button:not(.collapsed){box-shadow: none !important;}
-.accordion-button{border-bottom: 1px solid #8B8787 !important ; padding: 1.5rem 1.25rem !important;}
+.accordion-item {
+  border: none !important;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.accordion-button {
+  border-bottom: 1px solid #8b8787 !important ;
+  padding: 1.5rem 1.25rem !important;
+}
 .inner_top_header {
   background-image: url("/img/top-headerbg.png");
   background-position: center;
@@ -805,7 +837,7 @@
 }
 .tophedcon h2 {
   font-family: "Inter", sans-serif;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 600;
   line-height: 47px;
   letter-spacing: 0em;
@@ -813,7 +845,7 @@
 }
 .tophedcon p {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -830,7 +862,7 @@
 }
 .breadcrumb-item {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 800;
   line-height: 19px;
   letter-spacing: 0em;
@@ -856,7 +888,7 @@
 .whyntelicon p.whyint {
   font-family: "Inter", sans-serif;
   color: #0e2e35;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -869,7 +901,7 @@
 
 .whyntelicon p {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 29px;
   letter-spacing: 0em;
@@ -878,8 +910,8 @@
 }
 .whyntelicon h2 {
   font-family: "Inter", sans-serif;
-  color: #0E2E35;
-  font-size: 20px;
+  color: #0e2e35;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -899,7 +931,7 @@
 .whyntelicon span {
   font-family: "Inter", sans-serif;
   color: #3a86ff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -912,7 +944,7 @@
 }
 .yrscon span {
   font-family: "Inter", sans-serif;
-  font-size: 90px;
+  font-size: 5.625rem;
   font-weight: 800;
   line-height: 158px;
   letter-spacing: 0em;
@@ -961,7 +993,7 @@
 
 .watchvideo p {
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 35px;
   letter-spacing: 0em;
@@ -990,7 +1022,7 @@
 
 .projectcontxt h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 600;
 
   letter-spacing: 0em;
@@ -999,7 +1031,7 @@
 }
 .projectcon span {
   font-family: "Roboto", sans-serif;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0em;
@@ -1037,7 +1069,7 @@
 }
 .bettercon h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0em;
@@ -1048,7 +1080,7 @@
 
 .bettercon p {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
@@ -1071,7 +1103,7 @@
 }
 .milestone-counter span {
   font-family: "Inter", sans-serif;
-  font-size: 64px;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 79px;
   letter-spacing: 0em;
@@ -1080,7 +1112,7 @@
 }
 .milestone-details {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0em;
@@ -1100,11 +1132,11 @@
   position: relative;
   max-width: 250px;
   width: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 35px;
 }
-.leadershipbox::before {
+/* .leadershipbox::before {
   position: absolute;
   content: "";
   left: 0;
@@ -1119,18 +1151,18 @@
   transform: perspective(400px) rotateX(-90deg);
   -webkit-transform-origin: top;
   -ms-transform-origin: top;
-}
-.leadershipboxmaincon:hover .leadershipbox::before {
+} */
+/* .leadershipboxmaincon:hover .leadershipbox::before {
   opacity: 0.8;
   transform: perspective(400px) rotateX(0deg);
-}
+} */
 .leadershipbox img {
   width: 250px;
   height: 250px;
 }
 .leadershipbox h2 {
   font-family: "Inter", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -1153,7 +1185,7 @@
 
 .leadershipbox p {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0em;
@@ -1181,7 +1213,7 @@
 
 .leadershipboxsmall h2 {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -1204,7 +1236,7 @@
 
 .leadershipboxsmall p {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0em;
@@ -1213,7 +1245,7 @@
   margin-top: 20px;
 }
 
-.leadershipboxsmall::before {
+/* .leadershipboxsmall::before {
   position: absolute;
   content: "";
   left: 0;
@@ -1228,11 +1260,11 @@
   transform: perspective(400px) rotateX(-90deg);
   -webkit-transform-origin: top;
   -ms-transform-origin: top;
-}
-.leadershipboxmaincon:hover .leadershipboxsmall::before {
+} */
+/* .leadershipboxmaincon:hover .leadershipboxsmall::before {
   opacity: 0.8;
   transform: perspective(400px) rotateX(0deg);
-}
+} */
 .leadershipboxsmall img {
   width: 200px;
   height: 200px;
@@ -1244,7 +1276,7 @@
 }
 .teamdet h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0em;
@@ -1257,7 +1289,7 @@
 }
 .teamdet ul li {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0em;
@@ -1276,7 +1308,7 @@
 }
 .industriescon span {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -1284,7 +1316,7 @@
 }
 .contactpara {
   font-family: "Inter", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -1571,8 +1603,8 @@ ul.taglist li:first-child {
   letter-spacing: 0em;
   text-align: left;
 }
-.conwithbrdr{
-  border-top: 1px solid #DCDBDA;
+.conwithbrdr {
+  border-top: 1px solid #dcdbda;
   padding-top: 25px;
 }
 
@@ -1641,11 +1673,54 @@ ul.taglist li:first-child {
 }
 
 @media only screen and (max-width: 480px) {
-  .newsletter label{font-weight: 600;}
-  .accordion-button{font-size: 1.3rem !important;}
-  .footer_menu h2{font-size: 20px !important;}
-  .footer_menu ul li a{font-size: 17px;}
-  .sendbtn{font-size: 20px;}
+  .slider-card p {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .watchvideobtn{margin: 0 auto;}
+  .ribbon-box {
+    justify-content: center;
+  }
+  .watchvideo p {
+    max-width: 100%;
+  }
+  .certificationsec img {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .leadershipbox img {
+    width: 100%;
+    height: auto;
+  }
+  .leadershipboxsmall img {
+    width: 100%;
+    height: auto;
+  }
+  .leadershipboxsmall {
+    max-width: 250px;
+  }
+  .secheader_innerpage {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .whyntelicon p.whyint {
+    text-align: justify;
+  }
+  .newsletter label {
+    font-weight: 600;
+  }
+  .accordion-button {
+    font-size: 1.3rem !important;
+  }
+  .footer_menu h2 {
+    font-size: 20px !important;
+  }
+  .footer_menu ul li a {
+    font-size: 17px;
+  }
+  .sendbtn {
+    font-size: 20px;
+  }
   .salesforce_txt {
     padding-left: 0px !important;
     display: flex;
@@ -1660,8 +1735,8 @@ ul.taglist li:first-child {
   }
   .salesforce_txt h5 {
     text-align: center;
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .salesforce_txt span {
     text-align: center;
@@ -1675,7 +1750,7 @@ ul.taglist li:first-child {
   .topheader_txt {
     font-size: 26px;
     text-align: center;
-    line-height: 45px;
+    line-height: 40px;
   }
   .topheader_cta {
     margin-left: 0px;
@@ -1720,17 +1795,15 @@ ul.taglist li:first-child {
     height: 250px;
   }
   .cpytxt {
-    text-align: center;
-    bottom: unset;
-    position: unset;
+    text-align: center;    
     margin-top: 40px;
   }
   .sendbtn {
     width: 100%;
   }
   .tophedcon {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .whyntelicon {
     margin-top: 20px;
@@ -1739,7 +1812,12 @@ ul.taglist li:first-child {
     padding: 0px;
   }
   .whyntelicon h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+  .whyntelicon p {
+    font-size: 1rem;
+    text-align: justify;
   }
   .bettercon {
     border: none;
@@ -1788,40 +1866,157 @@ ul.taglist li:first-child {
   .secheader_innerpage {
     font-weight: 500;
   }
-  .conwithbrdr{border-top: none; padding-top: 0px;}
-  .address h2{margin-top: 25px;}
-  .accordion-button:focus{box-shadow: none !important;}
-  .accordion-item{border: none;}
+  .conwithbrdr {
+    border-top: none;
+    padding-top: 0px;
+  }
+  .address h2 {
+    margin-top: 25px;
+  }
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+  .accordion-item {
+    border: none;
+  }
   .inptbox {
     border: 1px solid #76aeff !important;
     border-radius: 0px !important;
     padding-top: 15px !important;
     padding-bottom: 15px !important;
   }
-  .nav-link:hover::before{opacity: 0; width: 0%;}
-  .dropdown-menu{border: none !important; }
-  .dropdown-item{font-size: 19px !important;}
-  .nav-link{font-size: 20px;}
-  .secgap{padding-top: 50px;}
-  .whowearebg{padding-top: 0px;}
-  .btnlg{max-width: 80%;}
-    .testislider{padding: 40px 15px 40px 15px;}
-    .testislider p{font-size: 18px;}
-    .testislider .sliderftrtxt p{font-size: 15px;}
-    .testislider .sliderftrtxt span{font-size: 15px;}
+  .nav-link:hover::before {
+    opacity: 0;
+    width: 0%;
+  }
+  .dropdown-menu {
+    border: none !important;
+  }
+  .dropdown-item {
+    font-size: 19px !important;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  .secgap {
+    padding-top: 50px;
+  }
+  .whowearebg {
+    padding-top: 0px;
+  }
+  .btnlg {
+    max-width: 80%;
+  }
+  .testislider {
+    padding: 40px 15px 40px 15px;
+    margin-top: 25px;
+  }
+  .testislider p {
+    font-size: 18px;
+  }
+  .testislider .sliderftrtxt p {
+    font-size: 15px;
+  }
+  .testislider .sliderftrtxt span {
+    font-size: 15px;
+  }
 
-    .watchvideo p{font-size: 28px;}
-    .whyntelicon .yrscon p{font-size: 10px;}
-    .yrscon{justify-content: center;}
-    .industriescon{max-width: 90%;}
-    .contactpara{font-size: 26px;}
-    .secgapm{margin-top: 70px;}
-  
+  .watchvideo p {
+    font-size: 28px;
+    text-align: center;
+  }
+  .whyntelicon .yrscon p {
+    font-size: 10px;
+  }
+  .yrscon {
+    justify-content: center;
+  }
+  .industriescon {
+    max-width: 90%;
+  }
+  .contactpara {
+    font-size: 26px;
+  }
+  .secgapm {
+    margin-top: 70px;
+  }
+  .salesforceinner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
- 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .btnxl {
+    font-size: 15px;
+  }
+  .teamdet{margin-bottom: 25px;}
+  .leadmaincon{flex-direction: column;}
+  .leadershipboxsmall{max-width: 250px;}
+  .leadershipboxsmall img{width: 100%;
+    height: auto;}
+  .watchvideobtn{margin: 0 auto;}
+  .bettercon{border: none;}
+  .whyntelicon p{text-align: justify;}
+  .card-container {
+    flex-direction: column;
+  }
+  .watchvideo p{text-align: center; font-size: 28px; max-width: 100%;}
+  .testislider .sliderftrtxt span {
+    font-size: 10px;
+  }
+  .tophedcon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .testislider p {
+    font-size: 14px;
+  }
+  .first-card,
+  .second-card,
+  .third-card {
+    margin-top: 25px;
+    border-bottom: none;
+  }
+  .certificationsec img {
+    width: 100%;
+  }
+  .ribbon-box {
+    justify-content: center;
+  }
+  .testimonialsbg {
+    height: 250px;
+  }
+  .nav-link:hover::before {
+    opacity: 0;
+    width: 0%;
+  }
+  .dropdown-menu {
+    border: none !important;
+  }
+  .tophedcon p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 19px;
+  }
 
-@media only screen and (max-width: 768px) {
+  .tophedcon h2 {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .content_sec {
+    padding: 40px 40px 50px 40px;
+  }
+  .certified_sec {
+    width: 100%;
+  }
+  .nav-link {
+    padding: 10px 10px;
+  }
   .salesforce_txt {
     padding-left: 0px !important;
     display: flex;
@@ -1829,34 +2024,156 @@ ul.taglist li:first-child {
     align-items: center;
     flex-direction: column;
     margin-top: 25px !important;
+    width: 100%;
+  }
+  .salesforceinner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .salesforce_txt h5 {
     text-align: center;
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 2rem;
+    line-height: 40px;
   }
   .salesforce_txt span {
     text-align: center;
   }
   .hero_section .content_sec {
-    padding: 40px 40px 50px 40px;
+    padding: 40px 70px 50px 70px;
   }
   .ribbon-box .ribbon {
     font-size: 12px;
   }
   .topheader_txt {
-    font-size: 26px;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 45px;
+    line-height: 40px;
+  }
+  .whoweareinner {
+    padding-bottom: 30px;
   }
   .topheader_cta {
     margin-left: 0px;
     margin-bottom: 20px;
     margin-top: 30px;
+    display: none;
   }
   .hero_section .content_sec {
     flex-direction: column;
     display: flex;
   }
-  .cpytxt{bottom: -35px;}
+  /* .cpytxt {
+    bottom: -35px;
+  } */
+  .whyntelicon{margin-top: 25px;}
+  .footer_logo{width: 70px; height: 26px;}
+  .addresstxt{font-size: 0.9rem;}
+  .addresstxt a{font-size: 0.9rem;}
+  .addresstxt img{width: 20px; height: 20px;}
+  .footer_menu h2{font-size: 1rem;}
+  .footer_menu ul li a{font-size: 0.9rem;}
 }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .ribbon-box .ribbon {
+    font-size: 0.8rem;
+  }
+  .milestone-details{font-size: 0.8rem;}
+  .first-card h2,
+  .second-card h2,
+  .third-card h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .certificationsec img {
+    width: 100%;
+  }
+  .tophedcon p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 19px;
+  }
+  .whyntelicon h2{margin-top: 25px;}
+
+  .tophedcon h2 {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+  .tophedcon{padding-top: 20px; padding-bottom: 20px;}
+  .btnxl {
+    font-size: 15px;
+  }
+  .nav-link:hover::before {
+    opacity: 0 !important;
+    width: 0% !important;
+  }
+  .dropdown-menu {
+    border: none !important;
+  }
+  .nav-link {
+    padding: 10px 10px !important;
+  }
+  .topheader_txt {
+    font-size: 1.7rem !important;
+    line-height: 35px !important;
+    text-align: center;
+  }
+  .salesforceinner {
+    display: flex !important;
+    align-items: center !important ;
+    flex-direction: column !important;
+  }
+  .salesforce_txt h5 {
+    text-align: center !important;
+    font-size: 1.75rem !important;
+    line-height: 35px !important;
+  }
+  .salesforce_txt span {
+    text-align: center !important;
+  }
+  .expert_con img {
+    width: 160px;
+    height: 160px;
+  }
+  .leadershipbox{max-width: 200px;}
+  .leadmaincon{flex-wrap: wrap;}
+  .leadershipbox img{width: 200px; height: 200px;}
+  .teamdet{margin-bottom: 25px;}
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .certicon img {
+    width: 10% !important;
+  }
+  .track_stack {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+  }
+  .footer_logo{width: 70px; height: 26px;}
+  .addresstxt{font-size: 0.9rem;}
+  .addresstxt a{font-size: 0.9rem;}
+  .addresstxt img{width: 20px; height: 20px;}
+  .footer_menu h2{font-size: 1rem;}
+  .footer_menu ul li a{font-size: 0.9rem;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .nav-link{font-size: 15px;}
+  .topheader_cta a{font-size: 15px; padding: 11px 11px !important;}
+  .topheader_cta{width: 200px;}
+  .whyntelicon h2{margin-top: 25px;}
+
+  .footer_logo{width: 70px; height: 26px;}
+  .addresstxt{font-size: 0.9rem;}
+  .addresstxt a{font-size: 0.9rem;}
+  .addresstxt img{width: 20px; height: 20px;}
+  .footer_menu h2{font-size: 1rem;}
+  .footer_menu ul li a{font-size: 0.9rem;}
+  .teamdet{margin-bottom: 25px;}
+}
+
+ 
