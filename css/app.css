@@ -1945,6 +1945,7 @@ ul.taglist li:first-child {
     align-items: center;
     flex-direction: column;
   }
+  .conwithbrdr{margin-top: 25px;}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -1966,6 +1967,7 @@ ul.taglist li:first-child {
   .testislider .sliderftrtxt span {
     font-size: 10px;
   }
+  .ctabtn{margin-top: 30px;}
   .tophedcon {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -2073,12 +2075,14 @@ ul.taglist li:first-child {
   .addresstxt img{width: 20px; height: 20px;}
   .footer_menu h2{font-size: 1rem;}
   .footer_menu ul li a{font-size: 0.9rem;}
+  .conwithbrdr{margin-top: 25px;}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .ribbon-box .ribbon {
     font-size: 0.8rem;
   }
+  .conwithbrdr{margin-top: 25px;}
   .milestone-details{font-size: 0.8rem;}
   .first-card h2,
   .second-card h2,
@@ -2141,6 +2145,7 @@ ul.taglist li:first-child {
   .leadershipbox img{width: 200px; height: 200px;}
   .teamdet{margin-bottom: 25px;}
   
+  .whyntelicon{margin-top: 25px;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2153,12 +2158,20 @@ ul.taglist li:first-child {
     font-size: 12px;
     line-height: 40px;
   }
+  /* .projectcon{flex-direction: column; justify-content: center; align-items: center;}
+  .projectcontxt{text-align: center;}
+  .projectcontxt h2{text-align: center;}
+  .projectcontxt .buttonwith_whitebg{margin: 0 auto;}
+  .projectcon p{text-align: center;} */
   .footer_logo{width: 70px; height: 26px;}
   .addresstxt{font-size: 0.9rem;}
   .addresstxt a{font-size: 0.9rem;}
   .addresstxt img{width: 20px; height: 20px;}
   .footer_menu h2{font-size: 1rem;}
   .footer_menu ul li a{font-size: 0.9rem;}
+  .industriescon span{font-size: 1rem;}
+  .ctabtn p{font-size: 26px;}
+  .projectcontxt h2{font-size: 1rem;}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -2174,6 +2187,14 @@ ul.taglist li:first-child {
   .footer_menu h2{font-size: 1rem;}
   .footer_menu ul li a{font-size: 0.9rem;}
   .teamdet{margin-bottom: 25px;}
+  .ctabtn p{font-size: 32px;}
+  .whyntelicon{margin-top: 25px;}
+}
+
+@media only screen and (max-width:991px) {
+
+  .topheader_cta{display: none;}
+  
 }
 
  
